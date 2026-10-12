@@ -175,6 +175,10 @@
   .feat strong{font:600 18px/1.25 var(--f-body);letter-spacing:-.01em}
   .feat span{color:var(--muted-foreground);font-size:15px;line-height:1.5}
   .cluster-note{text-align:center}
+  .live-demo{margin-top:40px;text-align:center}
+  .live-demo .tiny{max-width:52ch;margin-inline:auto}
+  .live-demo .actions{justify-content:center;margin-top:20px}
+  .live-demo .note{text-align:center}
   @media (min-width:700px){.feat-list{grid-template-columns:repeat(2,1fr)}}
   @media (min-width:1024px){.feat-list{grid-template-columns:repeat(3,1fr)}}
   @media (max-width:699px){
@@ -383,7 +387,7 @@
         <div>
           <div class="actions">
             <a class="btn" data-whatsapp href="#contato">Criar meu primeiro roteiro</a>
-            <a class="btn btn-outline" href="#viajante">Ver um exemplo</a>
+            <a class="btn btn-outline" href="#demo">Ver um exemplo</a>
           </div>
           <p class="tiny">Sem app para instalar. Sem login para o viajante.</p>
           <span class="route-chip" aria-hidden="true">BKK → KBV · exemplo ilustrativo</span>
@@ -452,6 +456,16 @@
         <div class="phone p3"><div class="screen" role="img" aria-label="Exemplo da tela de voos, com dados ilustrativos: horários locais e o dia em que o grupo se divide em dois voos."><div class="scr-tabs"><span>Hoje</span><span>Roteiro</span><span>Hotéis</span><span class="on">Voos</span><span>Antes de ir</span></div><span class="scr-sep">26/11 · grupo dividido</span><div class="fl"><span class="t">17:05</span><span class="m">FD 3074</span><span class="t r">19:05</span><span class="ap">CNX Chiang Mai</span><span class="m">2h00</span><span class="ap r">KBV Krabi</span></div><span class="scr-sep">ou</span><div class="fl"><span class="t">15:45</span><span class="m">SL 513</span><span class="t r">17:00</span><span class="ap">CNX Chiang Mai</span><span class="m">1h15</span><span class="ap r">DMK Don Mueang</span></div><div class="fl"><span class="t">18:45</span><span class="m">SL 814</span><span class="t r">20:10</span><span class="ap">DMK Don Mueang</span><span class="m">1h25</span><span class="ap r">KBV Krabi</span></div><span class="scr-sep">02/12</span><div class="fl"><span class="t">17:20</span><span class="m">PG 296</span><span class="t r">18:50</span><span class="ap">KBV Krabi</span><span class="m">1h30</span><span class="ap r">BKK Suvarnabhumi</span></div><span class="scr-cap" style="padding-left:.2em">Volta</span><div class="fl"><span class="t">23:45</span><span class="m">TG 900</span><span class="t r">06:05 +1</span><span class="ap">BKK Suvarnabhumi</span><span class="m">10h20</span><span class="ap r">IST Istambul</span></div><span class="scr-sep">Espera de 3h50 em Istambul</span><div class="fl"><span class="t">09:55</span><span class="m">TK 15</span><span class="t r">17:45</span><span class="ap">IST Istambul</span><span class="m">13h50</span><span class="ap r">GRU São Paulo</span></div></div></div>
       </div>
       <p class="note cluster-note">Telas de exemplo: agências e dados fictícios.</p>
+      <div class="live-demo reveal" id="demo">
+        <h3>Abra o roteiro de verdade</h3>
+        <p class="tiny">Europa em 7 dias, de uma agência fictícia. Veja como o mesmo link se comporta em cada momento da viagem.</p>
+        <div class="actions">
+          <a class="btn btn-outline" href="https://itinily-app.vercel.app/v/Ju0sOX8rhNZk" target="_blank" rel="noopener">Antes da viagem</a>
+          <a class="btn" href="https://itinily-app.vercel.app/v/Ju0sOX8rhNZk?dia=2027-04-13" target="_blank" rel="noopener">Durante a viagem</a>
+          <a class="btn btn-outline" href="https://itinily-app.vercel.app/v/Ju0sOX8rhNZk?dia=2027-04-18" target="_blank" rel="noopener">Depois da viagem</a>
+        </div>
+        <p class="note">Roteiro de demonstração: agência, horários e valores fictícios.</p>
+      </div>
       <div class="feat-list" data-stagger>
         <div class="feat"><code aria-hidden="true">HOJ</code><strong>Hoje e amanhã</strong><span>O que acontece agora aparece primeiro, no fuso do destino.</span></div>
         <div class="feat"><code aria-hidden="true">MAP</code><strong>Ver no mapa</strong><span>Cada parada abre no Google Maps, com o percurso do dia.</span></div>
