@@ -1,0 +1,10 @@
+# publica só o site: index.html + imagens usadas
+*
+!.gitignore
+!index.html
+!img/
+img/*
+!img/favicon.svg
+!img/grande-palacio.webp
+!img/og.jpg
+!.nojekyll
